@@ -1,8 +1,8 @@
-precio=ARGV[0]
-usuarios_normales=ARGV[1]
-premium= ARGV[2]
-gratiutos=ARGV[3]
-gastos=ARGV[4]
+precio=ARGV[0].to_f
+usuarios_normales=ARGV[1].to_i
+premium= ARGV[2].to_i
+gratiutos=ARGV[3].to_i
+gastos=ARGV[4].to_f
 
 utilidad=(precio*usuarios_normales)+(precio*2*premium) - gastos
 #no se agregan los gratuitos, puesto que no le generan un ingreso al emprendedor numero 2
